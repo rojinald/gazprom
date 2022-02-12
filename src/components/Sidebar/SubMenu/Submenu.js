@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import SubMenuLast from '../SubMenuLast/SubMenuLast'
+
 import s from './Submenu.module.css'
+import SubMenuSecond from './SubMenuSecond/SubMenuSecond'
 
 
-const SubMenu = ({ item }) => {
+const SubMenu = ({item}) => {
+
    const [subnav, setSubnav] = useState(false)
    const showSubnav = () => setSubnav(!subnav)
 
@@ -29,7 +31,7 @@ const SubMenu = ({ item }) => {
 
       {
          subnav && item.subNav.map((item, index) => {
-            return <SubMenuLast item={item} key={index} />
+            return <SubMenuSecond item={item} key={index} />
          })
       }
 

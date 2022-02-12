@@ -17,18 +17,18 @@
   position: relative;
   z-index: 1;
 }
-.menu__link a {
+a {
   text-decoration: none;
   color: #a1a1a1;
   font-size: 16px;
 }
-.menu__link a:hover {
+a:hover {
   color: black;
 }
-#link_effect {
+.link_effect {
   color: black;
 }
-#link_effect::before {
+.link_effect::before {
   content: "";
   position: absolute;
   left: 33.33%;

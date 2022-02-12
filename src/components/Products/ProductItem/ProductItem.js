@@ -1,13 +1,14 @@
 import React from "react";
 import s from './ProductItem.module.css'
-const ProductItems =(props) =>{
-    return <div className={s.items}>
-   <div className={s.item__block}>
-   <div className={s.item__id} >{props.id} </div>
-   <div className={s.item__title} > {props.title}</div>
-    </div>
-    </div>
 
+
+const ProductItems =(props) =>{
+    return <>
+    <tr className={s.item__block} >
+  <td className={s.item__id} >  {props.id}</td>
+  <td className={s.item__title}>  {props.title}</td>
+  </tr>
+    </>
 }
 
 export default ProductItems

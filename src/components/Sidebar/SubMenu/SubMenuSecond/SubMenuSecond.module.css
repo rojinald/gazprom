@@ -1,0 +1,10 @@
+.sub_menu_item {
+   display: flex;
+   margin-left: 10px;
+}
+.sub_menu_item_title {
+   border-bottom: 1px solid black;
+}
+.sub_menu_item_title:hover {
+   border-color: blue;
+}
