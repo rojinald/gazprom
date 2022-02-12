@@ -1,0 +1,11 @@
+.item__block{
+    padding: 18px;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: left;
+    font-weight:bold;
+    color: grey;
+}
+.item__id{
+    padding-right: 257px;
+}

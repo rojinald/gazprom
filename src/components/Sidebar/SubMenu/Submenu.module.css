@@ -1,0 +1,14 @@
+.sub_menu {
+   display: flex;
+   flex-direction: column;
+}
+.sub_menu_item {
+   display: flex;
+   flex-direction: row;
+}
+.sub_menu_item_title {
+   border-bottom: 1px solid black;
+}
+.sub_menu_item_title:hover {
+   border-color: blue;
+}

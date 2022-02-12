@@ -1,0 +1,16 @@
+.submenu_main {
+  grid-area: n;
+  background-color: rgb(247, 247, 247);
+  padding: 15px;
+  border-style: solid;
+  border-color: #dadada;
+  border-width: 2px 2px 2px 0px;
+}
+.submenu_main a {
+  color: black;
+  font-size: 12px;
+  text-decoration: none;
+}
+.submenu_main a:hover {
+  color: blue;
+}

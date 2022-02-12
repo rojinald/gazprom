@@ -1,0 +1,15 @@
+.products{
+    max-width: 800px;
+    overflow: hidden;
+}
+
+.products_row{
+    font-weight: bold;
+    border-bottom: 2px solid#dadada;
+    text-transform: uppercase;
+    padding: 15px;
+    display: flex;
+}
+.row_id{
+    padding-right: 250px;
+}

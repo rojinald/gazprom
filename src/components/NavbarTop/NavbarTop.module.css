@@ -1,0 +1,42 @@
+.navtop {
+  grid-area: nt;
+  background-color: rgb(255, 255, 255);
+  margin: 15px 0 0 35px;
+  width: 100%;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  height: 100%;
+}
+.menu__link {
+  width: auto;
+  min-height: 100%;
+  margin-right: 15px;
+  position: relative;
+  z-index: 1;
+}
+.menu__link a {
+  text-decoration: none;
+  color: #a1a1a1;
+  font-size: 16px;
+}
+.menu__link a:hover {
+  color: black;
+}
+#link_effect {
+  color: black;
+}
+#link_effect::before {
+  content: "";
+  position: absolute;
+  left: 33.33%;
+  right: 0;
+  bottom: 0;
+  height: 0;
+  width: 35px;
+  border-bottom: 4px solid blue;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
