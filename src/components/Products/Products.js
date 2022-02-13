@@ -11,9 +11,11 @@ const Products = () => {
 
     return <> <h1>Продукция</h1>
     <table className={s.products}>
-         <thead className={s.products__block}>
+         <thead >
+         <tr className={s.products__block}>
          <th className={s.products__products__block_id} >ID</th>
          <th >Наименование</th>
+         </tr>
            </thead> 
         
          <tbody className={s.products_items} >
