@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom'
 const ContextMenu = ({ x, y, showMenu, isPath }) => {
    const style = () => {
       return {
-         height: 20,
-         width: 200,
+         height: 30,
+         width: 230,
          borderRadius: 10,
          backgroundColor: 'white',
          border: '2px solid grey',
@@ -21,7 +21,8 @@ const ContextMenu = ({ x, y, showMenu, isPath }) => {
    }
    return (
       <div style={style()} >
-         <Link target="blank" to={isPath} > <div style={styles.div}> Открыть в новой вкладке</div></Link>
+         {isPath ? <div style={styles.div}><Link target="blank" to={isPath} >  Открыть в новой вкладке</Link></div> : <div style={styles.div}>Работает только с ссылками в левом меню</div>}
+
 
       </div>
    )
@@ -35,7 +36,8 @@ const styles = {
       backgroundColor: '#black',
       color: '#black',
       fontWeight: 'bold',
-      cursor: 'pointer'
+      cursor: 'pointer',
+      fontSize: 14
    }
 }
 
