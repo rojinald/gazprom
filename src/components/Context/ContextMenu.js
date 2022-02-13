@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 
-const ContextMenu = ({ x, y, showMenu }) => {
+const ContextMenu = ({ x, y, showMenu, isPath }) => {
    const style = () => {
       return {
          height: 20,
@@ -21,7 +21,8 @@ const ContextMenu = ({ x, y, showMenu }) => {
    }
    return (
       <div style={style()} >
-        <Link target="blank" to="/central"  > <div style={styles.div}> Открыть в новой вкладке</div></Link>
+         <Link target="blank" to={isPath} > <div style={styles.div}> Открыть в новой вкладке</div></Link>
+
       </div>
    )
 }

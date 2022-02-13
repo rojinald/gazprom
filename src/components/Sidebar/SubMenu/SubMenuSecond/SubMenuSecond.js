@@ -10,30 +10,21 @@ const SubMenuSecond = ({ item }) => {
    const showSubnav = () => setSubnav(!subnav)
 
    return <>
-
-      <div className={s.sub_menu_items}>
-         <Link to={'/products/' + item.path} onClick={item.subNavLast && showSubnav}>
-            <div className={s.sub_menu_item}>
-               <div className={s.sub_menu_item_icon}>
-                  {item.subNavLast && subnav
-                     ? item.iconOpened
-                     : item.subNavLast
-                        ? item.iconClosed
-                        : null}
-               </div>
-               <div className={s.sub_menu_item_title}>{item.title}</div>
-            </div>
-         </Link>
-         {
+      <div className={s.sub_menu_item} onClick={item.subNavLast && showSubnav}>
+         <div className={s.sub_menu_item_icon}>
+            {item.subNavLast && subnav
+               ? item.iconOpened
+               : item.subNavLast
+                  ? item.iconClosed
+                  : null}
+         </div>
+         <Link to={'/products/' + item.path} className={s.sub_menu_item_title}>{item.title}</Link>
+      </div>
+      {
          subnav && item.subNavLast.map((item, index) => {
             return <SubMenuLast item={item} key={index} />
          })
       }
-
-
-
-
-      </div>
    </>
 }
 

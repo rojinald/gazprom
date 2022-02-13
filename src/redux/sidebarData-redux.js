@@ -12,7 +12,6 @@ const initialState = [
       path: '/*',
       iconOpened: iconOpened,
       iconClosed: iconClosed,
-      icon: iconClosed,
 
       subNav: [
          {
@@ -24,11 +23,10 @@ const initialState = [
             subNavLast: [
                {
                   title: 'Центральная',
-                  path: '#',
+                  path: '/central',
                   iconOpened: iconOpened,
                   iconClosed: iconClosed,
                }
-
             ]
          }
 
@@ -40,11 +38,11 @@ const initialState = [
 
 
 
-const sidebarData = (state = initialState,action) =>  {
-    switch(action.type){
-        default :
-        return state
-    }
+const sidebarData = (state = initialState, action) => {
+   switch (action.type) {
+      default:
+         return state
+   }
 }
 
 
