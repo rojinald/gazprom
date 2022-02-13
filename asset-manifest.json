@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/gazprom/static/css/main.842175a5.css",
-    "main.js": "/gazprom/static/js/main.943d3333.js",
+    "main.css": "/gazprom/static/css/main.3e7b50c9.css",
+    "main.js": "/gazprom/static/js/main.97a01380.js",
     "static/js/787.7f4808d0.chunk.js": "/gazprom/static/js/787.7f4808d0.chunk.js",
     "static/media/logoHead.svg": "/gazprom/static/media/logoHead.c62047ec30e937218737ea0e2dc1ad16.svg",
     "index.html": "/gazprom/index.html",
-    "main.842175a5.css.map": "/gazprom/static/css/main.842175a5.css.map",
-    "main.943d3333.js.map": "/gazprom/static/js/main.943d3333.js.map",
+    "main.3e7b50c9.css.map": "/gazprom/static/css/main.3e7b50c9.css.map",
+    "main.97a01380.js.map": "/gazprom/static/js/main.97a01380.js.map",
     "787.7f4808d0.chunk.js.map": "/gazprom/static/js/787.7f4808d0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.842175a5.css",
-    "static/js/main.943d3333.js"
+    "static/css/main.3e7b50c9.css",
+    "static/js/main.97a01380.js"
   ]
 }
